@@ -8,6 +8,9 @@ const organizationName = "go-simorgh"
 const projectName = "docs"
 
 const config: Config = {
+	trailingSlash: false,
+	deploymentBranch: "gh-pages",
+
 	title: "Simorgh",
 	tagline: "A full-stack framework powered by Go & TypeScript",
 	favicon: "img/favicon.ico",
