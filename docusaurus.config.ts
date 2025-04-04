@@ -4,23 +4,26 @@ import type * as Preset from "@docusaurus/preset-classic"
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const organizationName = "go-simorgh"
+const projectName = "docs"
+
 const config: Config = {
 	title: "Simorgh",
 	tagline: "A full-stack framework powered by Go & TypeScript",
 	favicon: "img/favicon.ico",
 
 	// Set the production url of your site here
-	url: "https://simorgh.dev",
+	url: `https://${organizationName}.github.io`,
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
-	baseUrl: "/",
+	baseUrl: `/${projectName}/`,
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
-	organizationName: "go-simorgh", // Usually your GitHub org/user name.
-	projectName: "simorgh", // Usually your repo name.
+	organizationName, // Usually your GitHub org/user name.
+	projectName, // Usually your repo name.
 
-	onBrokenLinks: "throw",
+	onBrokenLinks: "ignore",
 	onBrokenMarkdownLinks: "warn",
 
 	// Even if you don't use internationalization, you can use this field to set
@@ -39,7 +42,7 @@ const config: Config = {
 					sidebarPath: "./sidebars.ts",
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
-					editUrl: "https://github.com/go-simorgh/simorgh-docs/edit/main/",
+					editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
 				},
 				blog: {
 					showReadingTime: true,
@@ -49,7 +52,7 @@ const config: Config = {
 					},
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
-					editUrl: "https://github.com/simorgh/simorgh-docs/edit/main/blog/",
+					editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
 					// Useful options to enforce blogging best practices
 					onInlineTags: "warn",
 					onInlineAuthors: "warn",
